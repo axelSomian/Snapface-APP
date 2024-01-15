@@ -13,29 +13,31 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.mySnap=new FaceSnap(
-        'Shin-Sekai News',
-        'Mugiwara no luffy Kaizoku-ō',
-        new Date(),
-        1000000,
-        '../../assets/luffy.jpg'
-      )
+    this.mySnap={    
+        title:'Shin-Sekai News',
+        description:'Mugiwara no luffy Kaizoku-ō',
+        createdDate:new Date(),
+        snaps:1000000,
+        imageUrl:'../../assets/luffy.jpg',
+        location:'Marine Ford'
+      }
       
-      this.mySnap1=new FaceSnap(
-        'Dressrosa',
-        ' Dofuramingo no kanraku',
-        new Date(),
-        5,
-        '../../assets/dofla.jpg'
-      )
+      this.mySnap1={
+        title: 'Dressrosa',
+        description:' Dofuramingo no kanraku' ,
+        createdDate:  new Date() ,
+        snaps:5 ,
+        imageUrl: '../../assets/dofla.jpg' ,
+      }
       
-      this.mySnap2=new FaceSnap(
-        'East Blue',
-        'Yonkō biggumamu to kaidō no aratana dōmei',
-        new Date(),
-        45,
-        '../../assets/kaidoMon.jpg'
-      )
+      this.mySnap2={
+        title: 'East Blue',
+        description:'Yonkō biggumamu to kaidō no aratana dōmei' ,
+        createdDate:  new Date() ,
+        snaps:5 ,
+        imageUrl: '../../assets/kaidoMon.jpg',
+      }
+
       
 
   }
