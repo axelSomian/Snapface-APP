@@ -7,38 +7,56 @@ import { FaceSnap } from './models/face-snap.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  mySnap!:FaceSnap
-  mySnap1!:FaceSnap
-  mySnap2!:FaceSnap
+  faceSnaps!:FaceSnap[]
+
 
   ngOnInit(): void {
-
-    this.mySnap={    
-        title:'Shin-Sekai News',
-        description:'Mugiwara no luffy Kaizoku-ō',
-        createdDate:new Date(),
-        snaps:1000000,
-        imageUrl:'../../assets/luffy.jpg',
-        location:'Marine Ford'
-      }
-      
-      this.mySnap1={
-        title: 'Dressrosa',
-        description:' Dofuramingo no kanraku' ,
-        createdDate:  new Date() ,
-        snaps:5 ,
-        imageUrl: '../../assets/dofla.jpg' ,
-      }
-      
-      this.mySnap2={
-        title: 'East Blue',
-        description:'Yonkō biggumamu to kaidō no aratana dōmei' ,
-        createdDate:  new Date() ,
-        snaps:5 ,
-        imageUrl: '../../assets/kaidoMon.jpg',
-      }
-
-      
-
+    this.faceSnaps=[
+    {
+      title:'Shin-Sekai News',
+      description:'Mugiwara no luffy Kaizoku-ō',
+      createdDate:new Date(),
+      snaps:1000000,
+      imageUrl:'../../assets/luffy.jpg',
+      location:'Marine Ford'
+    },
+    {
+      title: 'Dressrosa',
+      description:' Dofuramingo no kanraku' ,
+      createdDate:  new Date() ,
+      snaps:5 ,
+      imageUrl: '../../assets/dofla.jpg' ,
+    },
+    {
+      title: 'East Blue',
+      description:'Yonkō biggumamu to kaidō no aratana dōmei' ,
+      createdDate:  new Date() ,
+      snaps:5 ,
+      imageUrl: '../../assets/kaidoMon.jpg',
+    },
+    {
+      title:'Shin-Sekai News',
+      description:'Kaizoku-ō no musuko',
+      createdDate:new Date(),
+      snaps:99999,
+      imageUrl:'https://i.pinimg.com/originals/de/01/81/de01815949455ff29e700305cc3de749.jpg',
+ 
+    },
+    {
+      title: 'Dressrosa',
+      description:' Usoland' ,
+      createdDate:  new Date() ,
+      snaps:5 ,
+      imageUrl: 'https://i.pinimg.com/originals/fa/d2/fe/fad2fe8f776b24ba791ba976fba6c102.jpg' ,
+    },
+    {
+      title: 'East Blue',
+      description:'Akagami no shanks' ,
+      createdDate:  new Date() ,
+      snaps:10059 ,
+      imageUrl: 'https://i.pinimg.com/originals/9f/21/e7/9f21e77272ce3d3e7c61597999ee3046.jpg',
+    }
+    ];
   }
+
 }
